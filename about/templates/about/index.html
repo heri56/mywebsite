@@ -6,8 +6,8 @@
     <title>Title</title>
 </head>
 <body>
-<img style="width: 100%" height="5%" src="{% static "blog/img/BannerBlog.png" %}"alt="">
-<h1>Ini adalah <i>{{ blogkita }}</i> untuk blog, navigasi ke bawah:</h1>
+<img style="width: 100%" height="5%" src="{% static "about/img/AboutBanner.png" %}"alt="">
+<h1>Ini About <i>{{ blogkita }}</i> untuk blog, navigasi ke bawah:</h1>
 <ul>
     {% for linkdin,name in nav %}
         <li>
@@ -17,14 +17,6 @@
     {% endfor %}
 </ul>
 <p>Kontributor {{ kontributor }}</p>
-{#<ul>#}
-{#    <li><a href="/">Home</a></li>#}
-{#    <li><a href="/blog">Ke Blog</a></li>#}
-{#    <ul>#}
-{#        <li><a href="/blog/cerita">Ke Cerita</a></li>#}
-{#        <li><a href="/blog/news">Ke News</a></li>#}
-{#    </ul>#}
-{#</ul>#}
 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
     standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a
     type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting,
