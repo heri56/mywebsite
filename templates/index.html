@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,8 +6,10 @@
     <title>{{ judul }}</title>
 </head>
 <body>
-<h1>Selamat datang di {{ judul }}</h1>
-<h2>Kontributor {{ kontributor }}</h2>
+
+{#<img style="width:100%" src="{% static "img/Cloud_banner.jpg" %}">#}
+<img style="width: 100%" src="{% static banner %}" alt="">
+<h1>{{ subjudul }}</h1>
 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
     standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a
     type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting,
