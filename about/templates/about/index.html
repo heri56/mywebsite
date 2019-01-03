@@ -1,17 +1,25 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>{{ datajudul }}</title>
+    <link rel="stylesheet" type="text/css" href="{% static app_css %}">
+    {#    <link rel="stylesheet" type="text/css" href="{% static app_css %}">#}
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
-{% load static %}
-<img style="width: 100%" src="{% static "about/img/AboutBanner.png"%}">
-<p>{{ dataabout }}</p>
-<ul>
-    <li><a href="/">Home</a> </li>
-    <li><a href="/blog">Blog</a> </li>
-    <li><a href="/about">About</a> </li>
-</ul>
+<img id="banner" src="{% static "about/img/AboutBanner.png" %}">
+<div class="container-fluid">
+    <nav>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/blog">Blog</a></li>
+            <li><a href="/about">About</a></li>
+        </ul>
+    </nav>
+    <h1>{{ dataabout }}</h1>
+</div>
 </body>
+
 </html>

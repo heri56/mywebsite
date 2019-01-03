@@ -6,7 +6,7 @@ def index(request):
     context = {
         'judul': 'Kelas Terbuka',
         'subjudul': 'Selamat Datang Di Home',
-        'banner' : 'img/Cloud_banner.jpg',
+        'banner': 'img/Cloud_banner.jpg',
     }
 
     return render(request, 'index.html', context)
