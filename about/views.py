@@ -4,12 +4,8 @@ from django.shortcuts import render
 # Create your views here.
 def index(request):
     context = {
-        'blogkita': '"Blog Saya"',
-        'kontributor': 'Heri Prastio',
-        'nav': [
-            ['/', 'Home'],
-            ['/blog/cerita', 'Cerita'],
-            ['/blog/news', 'News'],
-        ]
+        'dataabout': 'Judul About',
+        'datajudul': 'Selamat datang di About',
+        'banner': 'about/img/AboutBanner.png',
     }
     return render(request, 'about/index.html', context)

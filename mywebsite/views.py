@@ -5,14 +5,8 @@ from django.shortcuts import render
 def index(request):
     context = {
         'judul': 'Kelas Terbuka',
-        'subjudul': 'Selamat Datang',
-        'nav': [
-            ['/', 'Home'],
-            ['/blog', 'Blog'],
-            ['/about', 'About'],
-            ['/contact', 'Contact'],
-        ],
-        'banner':'img/Cloud_banner.jpg'
+        'subjudul': 'Selamat Datang Di Home',
+        'banner' : 'img/Cloud_banner.jpg',
     }
 
     return render(request, 'index.html', context)

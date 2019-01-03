@@ -1,4 +1,3 @@
-{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,22 +5,14 @@
     <title>{{ judul }}</title>
 </head>
 <body>
-
-{#<img style="width:100%" src="{% static "img/Cloud_banner.jpg" %}">#}
-<img style="width: 100%" src="{% static banner %}" alt="">
+{% load static %}
+{#<img style="width: 100%" src="{% static "img/Cloud_banner.jpg" %}">#}
+<img style="width: 100%" src="{% static banner %}">
 <h1>{{ subjudul }}</h1>
-<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
-    standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a
-    type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting,
-    remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing
-    Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of
-    Lorem Ipsum.</p>
 <ul>
-    {% for link, name in nav %}
-        <li>
-            <a href="{{ link }}" title="">{{ name }}</a>
-        </li>
-    {% endfor %}
+    <li><a href="/">Home</a> </li>
+    <li><a href="/blog">Blog</a> </li>
+    <li><a href="/about">About</a> </li>
 </ul>
 
 </body>
